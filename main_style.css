@@ -113,8 +113,43 @@ footer{
     float: right;
 }
 
+#article-display-list{
+    padding-top: 5vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 10%;
+    width: 100%;
+}
+
+.article-display{
+    border: 4px solid #124713;
+    background-color:#72933a;
+    color:#dbeec2;
+    width: 100vh;
+}
+
+.article-display img{
+    width: 90%;
+    padding: 5%;
+}
+
 #upcoming-term-dates{
     margin-top: 10%;
+    border: 4px solid #124713;
+    background-color: #dbeec2;
+    height: 50vh;
+}
+
+.term-dates-name{
+    float: left;
+    padding: 10%;
+}
+
+.term-dates-date{
+    float: right;
+    padding: 10%;
 }
 
 #footer-banner{
