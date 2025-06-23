@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Quicksand:wght@300..700&display=swap');
 
+* {
+    margin: 0;
+}
+
 body{
     background-color: #fffade;
     color: #72933a;
@@ -25,7 +29,7 @@ p{
     font-size: 16px;
 }
 
-button{
+a{
     background-color: #72933a;
     color: #dbeec2;
     border: 4px solid #124713;
@@ -33,6 +37,7 @@ button{
     font-size: 30px;
     display: inline-block;
     transition-duration: 0.3s;
+    text-decoration: none;
 }
 
 img{
@@ -47,14 +52,20 @@ header{
     text-align: left;
 }
 
-header button{
+header a{
     padding: 15px;
     margin: 0px;
     background-color: rgba(0,0,0,0);
     border: none;
+    color: #dbeec2;
+    text-decoration: none;
+    font-family: "Oleo Script";
+    font-size: 30px;
+    display: inline-block;
+    transition-duration: 0.3s;
 }
 
-header button:hover{
+header a:hover{
     padding: 15px;
     margin: 0px;
     background-color: rgba(219, 238, 194, 0.48);
@@ -87,7 +98,7 @@ footer{
 #intro-paragraph{
     background-color: #dbeec2;
     color:#124713;
-    padding: 10px 10% 50px 10%;
+    padding: 50px 10% 50px 10%;
 }
 
 #intro-img{
@@ -113,6 +124,11 @@ footer{
     float: right;
 }
 
+#see-more a:hover{
+    background-color: #dbeec2;
+    color:#1c661e;
+}
+
 #article-display-list{
     padding-top: 5vh;
     display: flex;
@@ -123,16 +139,34 @@ footer{
     width: 100%;
 }
 
+#article-display-list a{
+    transition-duration: 0.3s;
+    font-family: "Quicksand";
+}
+
+#article-display-list a:hover{
+    background-color:#dbeec2;
+    color:#1c661e;
+}
+
 .article-display{
     border: 4px solid #124713;
     background-color:#72933a;
     color:#dbeec2;
     width: 100vh;
+    text-align: justify;
+    padding: 1%;
 }
 
 .article-display img{
     width: 90%;
-    padding: 5%;
+    padding: 3%;
+}
+
+.article-display-title{
+    font-family: "Oleo Script";
+    font-size: 26px;
+    text-align: center;
 }
 
 #upcoming-term-dates{
@@ -140,6 +174,8 @@ footer{
     border: 4px solid #124713;
     background-color: #dbeec2;
     height: 50vh;
+    width: 100%;
+    display: inline-block;
 }
 
 .term-dates-name{
@@ -155,5 +191,13 @@ footer{
 #footer-banner{
     background-color: #72933a;
     color: #dbeec2;
-    padding: 1px;
+    padding: 15px;
+}
+
+#footer-links a{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    font-family: "Quicksand";
+    font-size: 18px;
+    display: block;
 }
