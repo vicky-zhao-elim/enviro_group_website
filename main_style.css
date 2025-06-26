@@ -52,7 +52,7 @@ img{
 }
 
 header{
-    background-color:rgba(7,37,8,0.78);
+    background-color: #124713;
     background-image: none;
     font-family: "Oleo Script";
     color: #dbeec2;
@@ -75,12 +75,16 @@ header a{
 header a:hover{
     padding: 15px;
     margin: 0px;
-    background-color: rgba(219, 238, 194, 0.48);
+    background-color: #dbeec2;
     color:#124713;
 }
 
 .header-logo{
     font-size: 36px;
+}
+
+.current-page{
+    color: white;
 }
 
 footer{
@@ -121,6 +125,7 @@ footer{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 #ra-heading{
@@ -134,7 +139,6 @@ footer{
     text-align: right;
     margin-right: 5%;
     display: inline;
-    float: right;
 }
 
 #article-display-list{
@@ -174,13 +178,13 @@ footer{
 }
 
 #upcoming-term-dates{
-    margin-top: 10vh;
     margin-bottom: 10vh;
+    padding-bottom: 5vh;
     border: 4px solid #124713;
     background-color: #dbeec2;
     height: 50vh;
     width: 100%;
-    display: inline-block;
+    overflow-y: hidden;
 }
 
 .term-dates-name{
@@ -210,12 +214,16 @@ footer{
     border: none;
     font-family: "Quicksand";
     text-decoration: underline;
+    margin: none;
+    padding: none;
+    display: inline;
 }
 
 #footer-links{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
+    padding-top: 5vh;
 }
 
 #footer-links a{
@@ -224,14 +232,16 @@ footer{
     font-family: "Quicksand";
     font-size: 15px;
     display: block;
+    margin-top: 2vh;
 }
 
 #back-to-top{
-    padding: 2vw;
-    border: none;
-    background-color: #72933a;
+    padding: 2%;
+    margin-right: 5vw;
+    background-color: #72933a; 
     color: #dbeec2;
     border: 4px solid #124713;
+    float: right;
 }
 
 @media (max-width: 1000px){
@@ -239,5 +249,15 @@ footer{
         flex-direction: column;
         width: 100vw;
         justify-content: center;
+    }
+    #see-more{
+        text-align: left;
+        margin-left: 5%;
+        padding-top: 5vh;
+    }
+    #back-to-top{
+        float: none;
+        width: 100vw;
+        margin-top: 10vh;
     }
 }
