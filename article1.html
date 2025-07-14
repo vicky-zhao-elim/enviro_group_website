@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About - Elim Enviro Group</title>
+    <title>Contact - Elim Enviro Group</title>
     <link rel="stylesheet" href="main_style.css">
 </head>
 <body>
     <header>
         <a class="header-logo" href="index.html">Elim Enviro Group</a>
-        <a class="current-page" href="about.html">About</a>
+        <a href="about.html">About</a>
         <a href="articles-list.html">Articles</a>
         <a href="contact.html">Contact</a>
     </header>
     
-    <h1>About</h1>
+    <div id="options-bar">
+        <a>Back</a>
+        <button onlick="change_text_difficulty">Basic</button>
+        <button onlick="change_text_difficulty">Advanced</button>
+        <input id="range-input" type="range" min="16" max="40" value="16" onchange="change_font_size('range')">
+        <input id="number-input" type="number" min="16" max="40" value="16" onchange="change_font_size('number')">
+    </div>
 
-    <img src="images/placeholder.png">
+    <h1>Article Title</h1>
+    <p id="article-info">By... </p>
 
     <article>
+        <div id="article"> 
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -25,16 +33,16 @@
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
             qui officia deserunt mollit anim id est laborum.
-            <br><br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <br>
         </p>
+        <img src="images/placeholder.png">
+        <p>
+            Here is a smaller length paragraph
+            to test it out probably write actual 
+            stuff here.
+        </p>
+    </div>
     </article>
-
 
     <footer>
         <div id="footer-banner">
@@ -55,5 +63,6 @@
         </div>
         <a id="back-to-top" href="">&nbsp^&nbsp</a>
     </footer>
+    <script src="article.js"></script>
 </body>
 </html>

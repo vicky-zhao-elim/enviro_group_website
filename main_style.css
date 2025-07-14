@@ -19,6 +19,7 @@ body{
 h1{
     font-family: 'Oleo Script';
     font-size: 80px;
+    margin-top: 3vh;
 }
 
 h2{
@@ -29,6 +30,10 @@ h2{
 
 p{
     font-size: 16px;
+}
+
+article{
+    padding: 0 10vw 3vh 10vw;
 }
 
 a{
@@ -71,7 +76,6 @@ header a{
     font-family: "Oleo Script";
     font-size: 30px;
     display: inline-block;
-    transition-duration: 0.3s;
 }
 
 header a:hover{
@@ -95,7 +99,7 @@ footer{
 }
 
 #welcome{
-    background-image: url("images/school_img_1.jpg");
+    background-image: url("images/placeholder.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -154,7 +158,6 @@ footer{
 }
 
 #article-display-list a{
-    transition-duration: 0.3s;
     font-family: "Quicksand";
 }
 
@@ -250,10 +253,52 @@ footer{
 
 #contact-section{
     display: flex;
+    margin: 10vh;
+    background-color: none;
+}
+
+#contact-info{
+    width: 75vw;
+    margin: 1vw;
+}
+
+#contact-icon{
+    height: 2vh;
+    width: 2vw;
+    display: inline-block;
+    padding: 0;
+}
+
+#email-contact{
+    width: 100%;
+}
+
+/*ARTICLES LIST*/
+
+#all-articles-list{
+    padding-top: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 3%;
+    width: 100%;
+}
+
+#all-articles-list a{
+    font-family: "Quicksand";
+    width: 30vw;
+}
+
+/*ARTICLES*/
+
+#options-bar{
+    background-color: #72933a;
+    margin: 5vw;
 }
 
 @media (max-width: 1000px){
-    #article-display-list, #ra-title{
+    #article-display-list, #ra-title, #all-articles-list{
         flex-direction: column;
         width: 100vw;
         justify-content: center;
@@ -268,4 +313,4 @@ footer{
         width: 100vw;
         margin-top: 10vh;
     }
-}
+}@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Quicksand:wght@300..700&display=swap');
