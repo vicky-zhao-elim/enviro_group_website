@@ -333,12 +333,35 @@ footer{
     padding: 1vh;
 }
 
+#article-info{
+    margin-top: -8vh;
+}
+
+#article-info h1{
+    margin: 0;
+}
+
+#article-info p{
+    margin-top: -2vh;
+}
+
+article{
+    margin: 3vh;
+}
+
+article img{
+    width: 50%;
+    margin-top: 4vh;
+}
+
 #journaling-ad{
     font-family: "Quicksand";
     background-color: #124713;
     border: 4px solid #72933a;
     padding: 10px;
 }
+
+/*RESPONSIVENESS*/
 
 @media (max-width: 1000px){
     #article-display-list, #ra-title, #all-articles-list{
@@ -356,4 +379,4 @@ footer{
         width: 100vw;
         margin-top: 10vh;
     }
-}@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Quicksand:wght@300..700&display=swap');
+}
