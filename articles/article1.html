@@ -2,20 +2,21 @@
 <html>
 <head>
     <title>Contact - Elim Enviro Group</title>
-    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="/./main_style.css">
 </head>
 <body>
     <header>
-        <a class="header-logo" href="index.html">Elim Enviro Group</a>
-        <a href="about.html">About</a>
-        <a href="articles-list.html">Articles</a>
-        <a href="contact.html">Contact</a>
+        <a class="header-logo" href="/./index.html">Elim Enviro Group</a>
+        <a href="/./about.html">About</a>
+        <a href="/./articles-list.html">Articles</a>
+        <a href="/./contact.html">Contact</a>
     </header>
     
     <div id="options-bar">
-        <a>Back</a>
-        <button onlick="change_text_difficulty">Basic</button>
-        <button onlick="change_text_difficulty">Advanced</button>
+        <a href="/./articles-list.html" id="back-button">&larr; Articles</a>
+        <p>Reading Difficulty: </p>
+        <button onlick="change_text_difficulty">Easier</button>
+        <button onlick="change_text_difficulty">Harder</button>
         <input id="range-input" type="range" min="16" max="40" value="16" onchange="change_font_size('range')">
         <input id="number-input" type="number" min="16" max="40" value="16" onchange="change_font_size('number')">
     </div>
@@ -35,7 +36,7 @@
             qui officia deserunt mollit anim id est laborum.
             <br>
         </p>
-        <img src="images/placeholder.png">
+        <img src="/./images/placeholder.png">
         <p>
             Here is a smaller length paragraph
             to test it out probably write actual 
@@ -44,16 +45,21 @@
     </div>
     </article>
 
+    <a id="journaling-ad">
+        <p><strong>Interested in joining the enviro group journaling team?</strong></p>
+        <p>Send an email to us!</p>
+    </a>
+
     <footer>
         <div id="footer-banner">
-            <p>Have any questions or suggestions? <a href="contact.html">Contact us!</a></p>
+            <p>Have any questions or suggestions? <a href="/./contact.html">Contact us!</a></p>
         </div>
         <div id="footer-links">
             <div>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="articles-list.html">All Articles</a>
-                <a href="contact.html">Contact</a>
+                <a href="/./index.html">Home</a>
+                <a href="/./about.html">About</a>
+                <a href="/./articles-list.html">All Articles</a>
+                <a href="/./contact.html">Contact</a>
             </div>
             <div>
                 <a href="https://elimmtalbert.school.nz/">Elim Christian College Mount Albert Main Website</a>
