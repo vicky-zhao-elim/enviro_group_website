@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact - Elim Enviro Group</title>
+    <title>Base Article - Elim Enviro Group</title>
     <link rel="stylesheet" href="/./main_style.css">
 </head>
 <body>
@@ -15,8 +15,9 @@
     <div id="options-bar">
         <a href="/./articles-list.html" id="back-button">&larr; Articles</a>
         <p>Reading Difficulty: </p>
-        <button onlick="change_text_difficulty">Easier</button>
-        <button onlick="change_text_difficulty">Harder</button>
+        <button onlick="change_text_difficulty('easy')">Easier</button>
+        <button onlick="change_text_difficulty('hard')">Harder</button>
+        <p>Font Size:&nbsp&nbsp</p>
         <input id="range-input" type="range" min="16" max="40" value="16" onchange="change_font_size('range')">
         <input id="number-input" type="number" min="16" max="40" value="16" onchange="change_font_size('number')">
     </div>

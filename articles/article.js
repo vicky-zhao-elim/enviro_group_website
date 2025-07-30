@@ -4,6 +4,7 @@ const number_input = document.getElementById("number-input");
 
 const difficult_change = {
   //easy : hard
+  //just make it auto replace these words with the simpler/harder version
 
 }
 
@@ -30,12 +31,13 @@ function change_font_size(input_value){
 
   document.cookie = "font-size=" + target_size + "px"
   console.log(document.cookie)
-  //make it update while scrolling?
-
 }
 
-function change_text_difficulty(){
-  //?????
+function change_text_difficulty(difficulty){
+  for(let i = 0; i < article_text.length; i++){
+    let cur_paragraph = article_text[i].innerHTML;
+    console.log("e"+cur_paragraph)
+  }
 }
 
 console.log(document.cookie)

@@ -114,8 +114,55 @@ footer{
     height: 400px;
 }
 
+#footer-banner{
+    background-color: #72933a;
+    color: #dbeec2;
+    padding: 15px;
+}
+
+#footer-banner p{
+    font-size: 20px;
+}
+
+#footer-banner a{
+    font-size: 20px;
+    border: none;
+    font-family: "Quicksand";
+    text-decoration: underline;
+    margin: none;
+    padding: none;
+    display: inline;
+}
+
+#footer-links{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 5vh;
+}
+
+#footer-links a{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    font-family: "Quicksand";
+    font-size: 15px;
+    display: block;
+    margin-top: 2vh;
+}
+
+#back-to-top{
+    padding: 2%;
+    margin-right: 5vw;
+    background-color: #72933a; 
+    color: #dbeec2;
+    border: 4px solid #124713;
+    float: right;
+}
+
+/*INDEX*/
+
 #welcome{
-    background-image: url("images/placeholder.png");
+    background-image: url("images/school_image.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -163,6 +210,30 @@ footer{
     display: inline;
 }
 
+#upcoming-term-dates{
+    margin-bottom: 10vh;
+    padding-bottom: 5vh;
+    border: 4px solid #124713;
+    background-color: #dbeec2;
+    height: 50vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.term-dates-name{
+    float: left;
+    padding: 5%;
+    margin-left: 15%;
+}
+
+.term-dates-date{
+    float: right;
+    padding: 5%;
+    margin-right: 15%;
+}
+
+/*Article display box - shared with all articles list*/
+
 #article-display-list{
     padding-top: 5vh;
     display: flex;
@@ -198,78 +269,11 @@ footer{
     text-align: center;
 }
 
-#upcoming-term-dates{
-    margin-bottom: 10vh;
-    padding-bottom: 5vh;
-    border: 4px solid #124713;
-    background-color: #dbeec2;
-    height: 50vh;
-    width: 100%;
-    overflow-y: hidden;
-}
-
-.term-dates-name{
-    float: left;
-    padding: 5%;
-    margin-left: 15%;
-}
-
-.term-dates-date{
-    float: right;
-    padding: 5%;
-    margin-right: 15%;
-}
-
-#footer-banner{
-    background-color: #72933a;
-    color: #dbeec2;
-    padding: 15px;
-}
-
-#footer-banner p{
-    font-size: 20px;
-}
-
-#footer-banner a{
-    font-size: 20px;
-    border: none;
-    font-family: "Quicksand";
-    text-decoration: underline;
-    margin: none;
-    padding: none;
-    display: inline;
-}
-
-#footer-links{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    padding-top: 5vh;
-}
-
-#footer-links a{
-    background-color: rgba(0,0,0,0);
-    border: none;
-    font-family: "Quicksand";
-    font-size: 15px;
-    display: block;
-    margin-top: 2vh;
-}
-
-#back-to-top{
-    padding: 2%;
-    margin-right: 5vw;
-    background-color: #72933a; 
-    color: #dbeec2;
-    border: 4px solid #124713;
-    float: right;
-}
-
 /*CONTACT*/
 
 #contact-section{
     display: flex;
-    margin: 10vh;
+    margin: 5vh;
     background-color: none;
 }
 
@@ -283,10 +287,26 @@ footer{
     width: 2vw;
     display: inline-block;
     padding: 0;
+    object-fit: contain;
 }
 
 #email-contact{
     width: 100%;
+    background-color: #72933a;
+    color:#dbeec2;
+    height: 20vh;
+    margin: 5vh;
+}
+
+#email-contact a{
+    border: none;
+    font-family: "Quicksand";
+    text-decoration: underline;
+    margin-top: 5vh;
+}
+
+#email-contact p{
+    font-size: 25px;
 }
 
 /*ARTICLES LIST*/
@@ -333,10 +353,6 @@ footer{
     padding: 1vh;
 }
 
-#article-info{
-    margin-top: -8vh;
-}
-
 #article-info h1{
     margin: 0;
 }
@@ -347,6 +363,7 @@ footer{
 
 article{
     margin: 3vh;
+    /*Align this horizontally*/
 }
 
 article img{
@@ -359,15 +376,20 @@ article img{
     background-color: #124713;
     border: 4px solid #72933a;
     padding: 10px;
+    margin-bottom: 5vh;
 }
 
 /*RESPONSIVENESS*/
 
 @media (max-width: 1000px){
-    #article-display-list, #ra-title, #all-articles-list{
+    #article-display-list, #ra-title, #all-articles-list, #contact-section{
         flex-direction: column;
         width: 100vw;
         justify-content: center;
+    }
+    #all-articles-list a{
+        width: 70vw;
+        margin: 12vw;
     }
     #see-more{
         text-align: left;
@@ -378,5 +400,14 @@ article img{
         float: none;
         width: 100vw;
         margin-top: 10vh;
+    }
+    #options-bar{
+        flex-direction: column;
+        padding: 2vh;
+        border-top: 2vh solid #124713;
+    }
+    #options-bar a, #options-bar button{
+        width: 50vw;
+        margin-left: 16vw;
     }
 }
