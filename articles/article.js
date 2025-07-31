@@ -29,8 +29,8 @@ function change_font_size(input_value){
     article_text[i].style.fontSize = target_size + "px";
   }
 
-  document.cookie = "font-size=" + target_size + "px"
-  console.log(document.cookie)
+  document.cookie = "font-size=" + target_size + "px";
+  console.log(document.cookie);
 }
 
 function change_text_difficulty(difficulty){

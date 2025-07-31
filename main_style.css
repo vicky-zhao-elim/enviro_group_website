@@ -282,27 +282,20 @@ footer{
     margin: 1vw;
 }
 
-#contact-icon{
-    height: 2vh;
-    width: 2vw;
-    display: inline-block;
-    padding: 0;
-    object-fit: contain;
-}
-
 #email-contact{
-    width: 100%;
-    background-color: #72933a;
-    color:#dbeec2;
-    height: 20vh;
-    margin: 5vh;
-}
-
-#email-contact a{
     border: none;
     font-family: "Quicksand";
     text-decoration: underline;
-    margin-top: 5vh;
+    text-align: center;
+    background-color: #72933a;
+    color:#dbeec2;
+    padding: 5vh;
+    margin-top: 10vh;
+}
+
+#email-contact:hover{
+    background-color: #dbeec2;
+    color:#72933a;
 }
 
 #email-contact p{
