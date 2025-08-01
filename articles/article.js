@@ -2,11 +2,13 @@ const article_text = document.getElementsByTagName("article")[0].getElementsByTa
 const range_input = document.getElementById("range-input");
 const number_input = document.getElementById("number-input");
 
-const difficult_change = {
-  //easy : hard
-  //just make it auto replace these words with the simpler/harder version
+const difficult_change_easy = [
+  'nature', 
+]
 
-}
+const difficult_change_hard = [
+  'environment', 
+]
 
 function change_font_size(input_value){
   let target_size;
@@ -29,27 +31,19 @@ function change_font_size(input_value){
     article_text[i].style.fontSize = target_size + "px";
   }
 
-  document.cookie = "font-size=" + target_size + "px";
-  console.log(document.cookie);
 }
 
 function change_text_difficulty(difficulty){
   for(let i = 0; i < article_text.length; i++){
-    let cur_paragraph = article_text[i].innerHTML;
-    console.log("e"+cur_paragraph)
+    let cur_paragraph = article_text[i].innerHTML.toLowerCase();
+    for(let j = 0; j < difficult_change_easy.length; j++){
+      if(difficulty == 'easy'){
+        article_text[i].innerHTML = cur_paragraph.replace(difficult_change_hard[j], difficult_change_easy[j]);
+      }
+      else{
+        article_text[i].innerHTML = cur_paragraph.replace(difficult_change_easy[j], difficult_change_hard[j]);
+      }
+    }
   }
 }
 
-console.log(document.cookie)
-
-if(document.cookie == ""){
-  document.cookie = "font-size=16px";
-}
-else{
-  let size = "";
-  for(let i = 0; i < 2; i++){
-    size += document.cookie[i + 10 + 16];
-    // please check this
-  }
-  change_font_size(size);
-}
