@@ -2,6 +2,7 @@ const article_text = document.getElementsByTagName("article")[0].getElementsByTa
 const range_input = document.getElementById("range-input");
 const number_input = document.getElementById("number-input");
 
+//Put the corresponding words you want to swap out below. Example shown.
 const difficult_change_easy = [
   'nature', 
 ]
@@ -35,7 +36,7 @@ function change_font_size(input_value){
 
 function change_text_difficulty(difficulty){
   for(let i = 0; i < article_text.length; i++){
-    let cur_paragraph = article_text[i].innerHTML.toLowerCase();
+    let cur_paragraph = article_text[i].innerHTML;
     for(let j = 0; j < difficult_change_easy.length; j++){
       if(difficulty == 'easy'){
         article_text[i].innerHTML = cur_paragraph.replace(difficult_change_hard[j], difficult_change_easy[j]);
